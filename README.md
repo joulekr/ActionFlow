@@ -13,6 +13,7 @@ Windows Launcher &amp; Productivity Tool in rust
 | Global Shortcut | `Ctrl + Shift + Space` (can be changed in settings) |
 | Deployment Format | NSIS Installer (`.exe`) |
 | Data Storage | `%APPDATA%\actionflow\` (mixed JSON + SQLite) |
+| Language | English, Korean |
 
 ---
 
@@ -49,8 +50,6 @@ Use the ℹ button on the ModeBar to display the About panel inline (no mode cha
 | `Ctrl+O` | Open folder containing the file |
 | `Esc` | Close window (Closes About or Risk Confirmation window first if open) |
 | `Tab` / `Shift+Tab` | Cycle through next/previous mode |
-
-Translated with DeepL.com (free version)
 
 ---
 
