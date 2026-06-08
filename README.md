@@ -24,14 +24,14 @@ Windows Launcher &amp; Productivity Tool in rust
 | Mode | Tab Order | Entry Keyword | Description |
 |------|---------|------------|------|
 | `default` | 1 | `launcher` / `launch` | Apps, Calculator, Conversion, Web Search |
-| `recent` | 2 | `recent` / `recent` | Combined view of recent clips, bookmarks, and files |
+| `recent` | 2 | `recent` | Combined view of recent clips, bookmarks, and files |
 | `clipboard` | 3 | `clip` / `clipboard` | Clipboard history |
 | `snippet` | 4 | `snippet` / `snip` | Snippet list |
 | `links` | 5 | `link` / `bookmark` | Bookmarks + Workspace |
-| `files` | 6 | `files` / `file` | File search |
+| `files` | 6 | `file` / `folder` | File search |
 | `emoji` | 7 | `emoji` / `icon` | Emoji search |
 | `settings` | 8 | `settings` / `config` | Settings panel |
-| `help` | 9 | `help` / `Help` | Help panel |
+| `help` | 9 | `help` | Help panel |
 
 Use the ℹ button on the ModeBar to display the About panel inline (no mode change).
 
