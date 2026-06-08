@@ -3,7 +3,7 @@ Windows Launcher &amp; Productivity Tool in rust
 
 ---
 
-## 1. Project Overview
+## Project Overview
 
 | Item | Description |
 |------|------|
@@ -13,11 +13,10 @@ Windows Launcher &amp; Productivity Tool in rust
 | Global Shortcut | `Ctrl + Shift + Space` (can be changed in settings) |
 | Deployment Format | NSIS Installer (`.exe`) |
 | Data Storage | `%APPDATA%\actionflow\` (mixed JSON + SQLite) |
-| Language | English, Korean |
 
 ---
 
-## 2. Mode System
+## Mode System
 
 9 modes. Cycle through them using `Tab` / `Shift+Tab`, or enter `/keyword` in the search bar to switch directly.
 
@@ -37,7 +36,7 @@ Use the ℹ button on the ModeBar to display the About panel inline (no mode cha
 
 ---
 
-## 3. Keyboard Navigation
+## Keyboard Navigation
 
 | Key | Action |
 |----|------|
@@ -53,60 +52,31 @@ Use the ℹ button on the ModeBar to display the About panel inline (no mode cha
 
 ---
 
-## 4. Key Features
+## Key Features
 
-### 4.1 App Launch Search
-- Scans: Start Menu (User and Public), Program Files, `shell:AppsFolder` (UWP/Store apps), Control Panel CLSID entries
-
-### 4.2 Inline Calculator
-- Pure Rust recursive descent parser (no external crates)
-
-### 4.3 Unit Conversion
-- Pattern: `<number> <unit> to/in <unit>`
-
-### 4.4 Web Search
-- Enter `?` at the end of the input → Performs a Google search using the default browser
-
-### 4.5 Snippets
-- `SnippetStore`: `Mutex<Vec<SnippetEntry>>` + `snippets.json` persistence
-
-### 4.6 Clipboard History
-- Win32 `OpenClipboard` / `GetClipboardData`
-
-### 4.7 Favorites (Links) + Workspace
-- `LinkEntry`: Supports app, folder, and URL types; extracts actual icons
-
-### 4.8 File Search
-- **Quick Search**: 4-level navigation through Desktop / Documents / Downloads (ready to use)
-- **Full-text Search**: SQLite indexing of drives C through Z
-
-### 4.9 Emoji Search
-- `emojis` crate (Unicode CLDR 3,600+ emojis)
-
-### 4.10 Plugin System
-- Define custom commands using `.toml` files in the `%APPDATA%\actionflow\plugins\` folder
-
-### 4.11 Timer
-- Parses English and Korean units such as `5m` / `1h30m` / `30 seconds` / `1 hour`
-
-### 4.12 System Commands
-- `lock` · `sleep` · `restart` · `shutdown` · `logout` · `close all apps` · `empty trash`
-
-### 4.13 Switching Between Open Windows
-- Collect a list of currently open windows using `EnumWindows` + `QueryFullProcessImageNameW`
-
-### 4.14 Sorting by Usage Frequency (Frecency)
-- `UsageStore`: `Mutex<HashMap<key, UsageEntry>>` + `usage.json`
-
-### 4.15 Recent Items Mode (Recent)
-- Integrated view of clipboard, favorites, and files on a single screen
-
-### 4.16 Automatic Updates
-- Based on `tauri-plugin-updater`, with minisign signature verification
+- **App Launch Search** - Scans: Start Menu (User and Public), Program Files, `shell:AppsFolder` (UWP/Store apps), Control Panel CLSID entries
+- **Inline Calculator** - Pure Rust recursive descent parser (no external crates)
+- **Unit Conversion** - Pattern: `<number> <unit> to/in <unit>`
+- **Web Search** - Enter `?` at the end of the input → Performs a Google search using the default browser
+- **Snippets** - `SnippetStore`: `Mutex<Vec<SnippetEntry>>` + `snippets.json` persistence
+- **Clipboard History** - Win32 `OpenClipboard` / `GetClipboardData`
+- **Favorites (Links) + Workspace** - `LinkEntry`: Supports app, folder, and URL types; extracts actual icons
+- **File Search**
+  - **Quick Search**: 4-level navigation through Desktop / Documents / Downloads (ready to use)
+  - **Full-text Search**: SQLite indexing of drives C through Z
+- **Emoji Search** - `emojis` crate (Unicode CLDR 3,600+ emojis)
+- **Plugin System** - Define custom commands using `.toml` files in the `%APPDATA%\actionflow\plugins\` folder
+- **Timer** - Parses English and Korean units such as `5m` / `1h30m` / `30 seconds` / `1 hour`
+- **System Commands** - `lock` · `sleep` · `restart` · `shutdown` · `logout` · `close all apps` · `empty trash`
+- **Switching Between Open Windows** - Collect a list of currently open windows using `EnumWindows` + `QueryFullProcessImageNameW`
+- **Sorting by Usage Frequency (Frecency)** - `UsageStore`: `Mutex<HashMap<key, UsageEntry>>` + `usage.json`
+- **Recent Items Mode (Recent)** - Integrated view of clipboard, favorites, and files on a single screen
+- **Automatic Updates** - Based on `tauri-plugin-updater`, with minisign signature verification
+- **Localization** - English, Korean
 
 ---
 
-## 5. Feature list:
+## Feature list:
 ### Finished:
 [ ] - 
 
