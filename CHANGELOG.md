@@ -5,7 +5,17 @@
 
 ---
 
-## [0.1.8] - June 7, 2026
+## [0.1.9] - 2026-06-11
+
+- **🔍 File Space Preview**: Select an item from the file search results and press `Space` to open an inline preview panel. Text files (`.txt`, `.md`, `.rs`, `.json`, and 30+ other extensions) display the first 10 lines in a monospace font, while image files (`.png`, `.jpg`, `.gif`, `.webp`, etc.) display a thumbnail.
+- **⏰ Reminder**: Set a reminder for a specific time using the format `remind 14:30 Prepare for meeting`. If the time has already passed, it automatically reschedules for the next day. You can cancel it by entering `Cancel`, `Cancel Reminder`, or `Cancel Notification`.
+- **📊 System Resource Monitor**: In the launcher's default mode, enter `cpu`, `ram`, `disk`, `memory`, or `disk` to display CPU usage, RAM, and C: drive usage in real time (updated every second) along with a progress bar.
+- **💱 Currency Converter**: Performs real-time currency conversions in formats such as `100 usd to krw` or `50 eur in jpy`.
+
+
+---
+
+## [0.1.8] - 2026-06-07
 
 - **🔄 Automatic Updates**: Added automatic update functionality based on `tauri-plugin-updater`
 - **🕒 Recent Tab (Recent mode)**: Added a “Recent” tab that allows you to view and search notes, clipboard items, bookmarks, and files all on a single screen
@@ -20,7 +30,7 @@
 
 ---
 
-## [0.1.6] - June 3, 2026
+## [0.1.6] - 2026-06-03
 
 - **📋 Clipboard Type Classification (ClipType)**: Added `text`, `url`, `image`, and `file` type fields to clipboard items
 - **🗄️ Clipboard Storage Switch to SQLite**: Replaced JSON files with SQLite (`clipboard.db`)
@@ -31,7 +41,7 @@
 
 ---
 
-## [0.1.5] - May 31, 2026
+## [0.1.5] - 2026-05-31
 
 - **🔌 Plugin `{{query}}` dynamic argument**: Text entered after the trigger is passed to the `{{query}}` placeholder in the command
 - **🌐 Plugin `http` action**: Native HTTP requests without PowerShell
