@@ -78,10 +78,13 @@ Use the ℹ button on the ModeBar to display the About panel inline (no mode cha
 
 ## Feature list:
 ### Finished:
-[ ] - 
+- [x] File preview feature (v0.1.9)
+- [x] Reminder feature (v0.1.9)
+- [ ] 
 
 ### Planned:
-[ ] - 
+- [ ] Add an image to the clipboard manager
+- [ ] 
 
 ---
 
