@@ -407,6 +407,89 @@ confirm = true
 
 An `example.toml` with many ready-to-use commands is created automatically on first launch.
 
+### Built-in Example Plugins (example.toml)
+
+Below is the full list of commands included in the `example.toml` file that is generated on first launch.
+
+#### 🔍 Dynamic Search
+
+| Trigger | Name | Description | Usage |
+|---------|------|-------------|-------|
+| `google` | 🔍 Google Search | Search Google for a keyword | `google react hooks` → opens Google in browser |
+| `yt` | ▶ YouTube Search | Search YouTube for a keyword | `yt lo-fi music` → opens YouTube results |
+| `naver` | 🔍 Naver Search | Search Naver for a keyword | `naver weather` → opens Naver search |
+| `papago` | 🌐 Papago Translate | Open Papago translation page | `papago hello world` → opens translation result |
+
+#### 🤖 AI Search
+
+| Trigger | Name | Description | Usage |
+|---------|------|-------------|-------|
+| `gpt` | 🤖 ChatGPT | Send a question to ChatGPT | `gpt how to sort in python` → opens ChatGPT |
+| `perplexity` | 🔎 Perplexity | Search with Perplexity AI | `perplexity tauri v2` → opens Perplexity search |
+
+#### 🌤 HTTP Request
+
+| Trigger | Name | Description | Usage |
+|---------|------|-------------|-------|
+| `weather` | 🌤 Seoul Weather | Fetch one-line Seoul weather from wttr.in | `weather` → copies weather info to clipboard |
+
+#### 📅 Date & Time
+
+| Trigger | Name | Description | Usage |
+|---------|------|-------------|-------|
+| `date` | 📅 Today's Date | Today's date in yyyy-MM-dd | `date` → copies `2026-06-14` to clipboard |
+| `time` | 🕐 Current Time | Current time in HH:mm:ss | `time` → copies `14:30:22` to clipboard |
+| `datetime` | 📅 Date + Time | Date and time combined | `datetime` → copies `2026-06-14 14:30:22` to clipboard |
+| `timestamp` | ⏱ Unix Timestamp | Current Unix timestamp (seconds) | `timestamp` → copies `1749912622` to clipboard |
+| `week` | 📆 Week Number | ISO week number of the current week | `week` → copies `24` to clipboard |
+
+#### 🌐 Network
+
+| Trigger | Name | Description | Usage |
+|---------|------|-------------|-------|
+| `ip` | 🌐 Public IP | Your internet-facing public IP address | `ip` → copies `203.xxx.xxx.xxx` to clipboard |
+| `local ip` | 🔌 Local IP | LAN IP address of this machine | `local ip` → copies `192.168.1.xxx` to clipboard |
+
+#### 🔑 Generate
+
+| Trigger | Name | Description | Usage |
+|---------|------|-------------|-------|
+| `uuid` | 🔑 Generate UUID | Random UUID v4 | `uuid` → copies `f47ac10b-...` to clipboard |
+| `password` | 🔐 Random Password (16 chars) | Uppercase, lowercase, digits, and special chars | `password` → copies `aB3#xK9!...` to clipboard |
+| `random` | 🎲 Random Number (1–100) | Random integer between 1 and 100 | `random` → copies `42` to clipboard |
+
+#### 💻 System Info
+
+| Trigger | Name | Description | Usage |
+|---------|------|-------------|-------|
+| `user` | 👤 Current Username | Windows login username | `user` → copies `joule` to clipboard |
+| `hostname` | 💻 Computer Name | Hostname of this PC | `hostname` → copies `DESKTOP-XXXXX` to clipboard |
+| `uptime` | ⏰ System Uptime | Time elapsed since last boot | `uptime` → copies `3 days 2 hours 15 minutes` to clipboard |
+| `disk` | 💾 C: Drive Space | Free and total capacity of C: drive | `disk` → copies `Free: 123.4 GB / Total: 500.0 GB` to clipboard |
+
+#### 📁 Open Folder
+
+| Trigger | Name | Description | Usage |
+|---------|------|-------------|-------|
+| `open downloads` | 📥 Downloads Folder | Open user's Downloads folder | `open downloads` → opens in Explorer |
+| `open desktop` | 🖥 Desktop Folder | Open user's Desktop folder | `open desktop` → opens in Explorer |
+| `open docs` | 📄 Documents Folder | Open user's Documents folder | `open docs` → opens in Explorer |
+| `open appdata` | 📁 AppData Folder | Open roaming AppData folder | `open appdata` → opens in Explorer |
+| `open plugins` | 🔌 Plugins Folder | Open ActionFlow's plugin folder | `open plugins` → opens in Explorer |
+
+#### ⚠️ Dangerous Commands (requires Enter confirmation)
+
+| Trigger | Name | Description | Usage |
+|---------|------|-------------|-------|
+| `wipe temp` | 🗑 Clear Temp Folder | Delete all user temporary files | `wipe temp` → Enter → Enter again to confirm |
+
+#### 📡 Other
+
+| Trigger | Name | Description | Usage |
+|---------|------|-------------|-------|
+| `ping` | 📡 Ping Google (×3) | Ping 8.8.8.8 three times | `ping` → copies ping result to clipboard (10s timeout) |
+| `hello` | 👋 Paste Greeting | Paste a saved greeting into the previous window | `hello` → pastes `안녕하세요! 반갑습니다 😊` |
+
 ---
 
 ## 11. Settings
