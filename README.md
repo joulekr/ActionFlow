@@ -1,7 +1,7 @@
 # ActionFlow
 Windows Launcher &amp; Productivity Tool in rust
 
-[![GitHub release](https://img.shields.io/github/v/release/joulekr/PasteWin?style=flat-square)](https://github.com/joulekr/PasteWin/releases/latest)
+[![GitHub release](https://img.shields.io/github/v/release/joulekr/ActionFlow?style=flat-square)](https://github.com/joulekr/ActionFlow/releases/latest)
 [![Built with Tauri](https://img.shields.io/badge/Built%20with-Tauri%20v2-24C8DB?style=flat-square&logo=tauri)](https://tauri.app)
 
 ---
