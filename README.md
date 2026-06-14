@@ -20,10 +20,8 @@ ActionFlow는 `Ctrl+Shift+Space` 단축키 하나로 호출하는 **Windows 전�
 ActionFlow is a **Windows-only launcher** invoked with a single shortcut (`Ctrl+Shift+Space`).  
 Launch apps, search files, manage clipboard history, calculate, convert units, run timers, expand snippets, and more — all without leaving your keyboard.
 
-![shot1](/docs/img/actionflow01.png)
-![shot2](/docs/img/actionflow02.png)
-![shot3](/docs/img/actionflow03.png)
-![shot4](/docs/img/actionflow04.png)
+<img src = "/docs/img/actionflow01.png" width="340"/> <img src = "/docs/img/actionflow02.png" width="340"/>
+<img src = "/docs/img/actionflow03.png" width="340"/> <img src = "/docs/img/actionflow04.png" width="340"/>
 
 ---
 
