@@ -149,8 +149,8 @@ today + 30         → 2026-07-14 (30일 후)
 
 ## 가이드 문서 / Documentation
 
-- 🇰🇷 [한국어 가이드](https://github.com/joulekr/ActionFlow/blob/main/GUIDE_KO.md)
-- 🇺🇸 [English Guide](https://github.com/joulekr/ActionFlow/blob/main/GUIDE_EN.md)
+- 🇰🇷 [한국어 가이드](https://github.com/joulekr/ActionFlow/blob/main/docs/GUIDE_KO.md)
+- 🇺🇸 [English Guide](https://github.com/joulekr/ActionFlow/blob/main/docs/GUIDE_EN.md)
 
 ---
 
