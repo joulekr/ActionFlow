@@ -532,7 +532,7 @@ Enter via `/setting` or the ⚙️ icon in the mode bar.
 
 | Shortcut | Action |
 |----------|--------|
-| `Space` | Toggle file preview |
+| `Ctrl+P` | Toggle file preview |
 | `Ctrl+C` | Copy selected file path |
 | `Ctrl+O` | Open containing folder in Explorer |
 | `Ctrl+Enter` | Open file properties |
