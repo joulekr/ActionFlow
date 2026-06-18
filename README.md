@@ -22,10 +22,10 @@
 
 ## 소개 / Overview
 
-ActionFlow는 `Ctrl+Shift+Space` 단축키 하나로 호출하는 **Windows 전용 런처**입니다.  
+ActionFlow는 `Ctrl+Shift+Space` 단축키 하나로 호출하는 가벼운 **Windows 전용 런처**입니다.  
 앱 실행, 파일 검색, 클립보드 히스토리, 계산기, 단위·환율 변환, 타이머, 스니펫, 플러그인까지 — 마우스 없이 키보드만으로 대부분의 작업을 처리할 수 있습니다.
 
-ActionFlow is a **Windows-only launcher** invoked with a single shortcut (`Ctrl+Shift+Space`).  
+ActionFlow is a lightweight **Windows-only launcher** invoked with a single shortcut (`Ctrl+Shift+Space`).  
 Launch apps, search files, manage clipboard history, calculate, convert units, run timers, expand snippets, and more — all without leaving your keyboard.
 
 <p align="center">
