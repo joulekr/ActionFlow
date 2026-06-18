@@ -25,7 +25,7 @@ ActionFlow is a launcher & productivity tool for Windows. With a single shortcut
 
 | Action | Method |
 |--------|--------|
-| Open / close launcher | `Ctrl + Shift + Space` |
+| Open / close launcher | `Ctrl + Shift + Space` (Change in Settings) |
 | Close | `Esc` |
 
 The search bar is focused automatically when the launcher opens — just start typing.
@@ -282,10 +282,11 @@ Search files and folders by name in your Desktop, Documents, and Downloads folde
 | Shortcut | Action |
 |----------|--------|
 | `Enter` | Open file / open folder in Explorer |
-| `Space` | Toggle file preview |
+| `Ctrl+P` | Toggle file preview |
 | `Ctrl+C` | Copy the selected file's path to clipboard |
 | `Ctrl+O` | Open the containing folder in Explorer |
 | `Ctrl+Enter` | Open file properties |
+| `Ctrl+Shift+Enter` | Open file as an administrator |
 | Right-click | Open folder / Copy path / Properties / ⭐ Add to Favorites |
 
 ### Search All Folders
