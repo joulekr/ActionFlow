@@ -7,17 +7,16 @@ ActionFlow is a launcher & productivity tool for Windows. With a single shortcut
 ## Table of Contents
 
 1. [Getting Started](#1-getting-started)
-2. [Default Mode (Launcher)](#2-default-mode-launcher)
+2. [Default Mode (All)](#2-default-mode-all)
 3. [Switching Modes](#3-switching-modes)
-4. [Recent (Unified Search)](#4-recent-unified-search)
-5. [Clipboard History](#5-clipboard-history)
-6. [Snippets](#6-snippets)
-7. [Favorites (Links)](#7-favorites-links)
-8. [File Search](#8-file-search)
-9. [Emoji Search](#9-emoji-search)
-10. [Plugins](#10-plugins)
-11. [Settings](#11-settings)
-12. [Keyboard Shortcuts](#12-keyboard-shortcuts)
+4. [Clipboard History](#4-clipboard-history)
+5. [Snippets](#5-snippets)
+6. [Favorites (Links)](#6-favorites-links)
+7. [File Search](#7-file-search)
+8. [Emoji Search](#8-emoji-search)
+9. [Plugins](#9-plugins)
+10. [Settings](#10-settings)
+11. [Keyboard Shortcuts](#11-keyboard-shortcuts)
 
 ---
 
@@ -25,16 +24,24 @@ ActionFlow is a launcher & productivity tool for Windows. With a single shortcut
 
 | Action | Method |
 |--------|--------|
-| Open / close launcher | `Ctrl + Shift + Space` (Change in Settings) |
+| Open / close launcher | `Ctrl + Shift + Space` |
 | Close | `Esc` |
 
 The search bar is focused automatically when the launcher opens — just start typing.
 
 ---
 
-## 2. Default Mode (Launcher)
+## 2. Default Mode (All)
 
 The launcher opens in default mode. Without a query, it automatically shows your most frequently used apps as a **Recent** list.
+
+### 2-0. Hybrid Unified Search
+
+When you type a query, results aren't limited to apps and the calculator anymore — **snippets, clipboard history, favorites, and files (2+ characters)** are searched in parallel and merged into a single ranked list, sorted by exact match, frecency, and per-kind priority.
+
+- Mixed-in results are still distinguishable by their kind icon (📌 snippet · 📋 clipboard · ⭐ favorite · 📁 file).
+- To narrow to one source, click a mode tab or use a keyword filter like `clip:` or `snippet:`.
+- Right-click still gives you actions (run, delete, etc.) directly, without switching to the dedicated tab.
 
 ### 2-1. Launch Apps & Switch Windows
 
@@ -44,7 +51,7 @@ excel           → Search by part of an app name
 ```
 
 - Open windows appear above app results in the list.
-- **Right-click** an app to add it to Favorites instantly.
+- **Right-click** an app for options like adding it to Favorites or running as administrator.
 - Apps you use most often rise to the top automatically (frecency-based ranking).
 
 ### 2-2. Calculator
@@ -149,8 +156,7 @@ Type `/keyword` in the search bar, or press `Tab` / `Shift+Tab` to cycle through
 
 | Input | Mode |
 |-------|------|
-| `/launch` or `/launcher` | ⚡ Launcher (default) |
-| `/recent` | 🕒 Recent (unified search) |
+| `/all` or `/launch` | ⚡ All (default) |
 | `/clip` or `/clipboard` | 📋 Clipboard history |
 | `/snip` or `/snippet` | 📌 Snippets |
 | `/link` or `/favorite` or `/bookmark` | ⭐ Favorites |
@@ -162,19 +168,7 @@ You can also click a mode in the mode bar at the top.
 
 ---
 
-## 4. Recent (Unified Search)
-
-Shows recent clipboard entries, favorites, and files in a single view.
-
-- Without a query, the 5 most recent items from each source are shown in separate sections.
-- Typing a query searches all 3 sources simultaneously and shows only sections with results.
-- `Enter` acts on each item type correctly (clipboard → paste, file → open).
-
-> File search activates after typing at least 2 characters.
-
----
-
-## 5. Clipboard History
+## 4. Clipboard History
 
 Text you copy is recorded automatically. Up to 200 entries are saved and persist across restarts.
 
@@ -192,9 +186,17 @@ Text you copy is recorded automatically. Up to 200 entries are saved and persist
 
 > Retention period and maximum entry count can be changed in Settings (defaults: 30 days, 200 entries).
 
+### Extract Text from Images (OCR)
+
+Selecting an image clip shows a **🔎 OCR** button in the detail panel.
+
+- Clicking it recognizes text in the image using the built-in Windows OCR engine (no separate install or download needed).
+- The recognized text appears below the preview, with a **Copy** button to copy it to the clipboard directly.
+- If no OCR language pack is installed for your language, an instructional message appears along with an **⚙️ Open Language Settings** button, which opens the Windows Settings "Language & region" page directly.
+
 ---
 
-## 6. Snippets
+## 5. Snippets
 
 Save frequently used text under a trigger word and paste it instantly.
 
@@ -234,7 +236,7 @@ Insert the following variables in snippet content — they are replaced with liv
 
 ---
 
-## 7. Favorites (Links)
+## 6. Favorites (Links)
 
 Register frequently used apps, folders, links, and workspaces for one-click access.
 
@@ -251,7 +253,7 @@ Register frequently used apps, folders, links, and workspaces for one-click acce
 
 ### Other Ways to Add
 
-- **Launcher mode**: right-click an app → ⭐ Add to Favorites
+- **All mode**: right-click an app → ⭐ Add to Favorites
 - **File mode**: right-click a folder/exe/lnk → ⭐ Add to Favorites
 
 ### Managing Items
@@ -270,24 +272,33 @@ Group multiple items and launch them all at once with a single `Enter`. Great fo
 
 ---
 
-## 8. File Search
+## 7. File Search
 
 Search files and folders by name in your Desktop, Documents, and Downloads folders.
 
 - Search activates after typing at least 2 characters.
 - File size and modification date are shown alongside each result.
+- Thanks to hybrid unified search, file results also appear in Default mode, and preview works there too.
+
+### File Preview
+
+Press `Ctrl+P` to open a preview column beside the result list (the window widens to fit both).
+
+- Text files show the first 10 lines, with syntax highlighting for JSON, Markdown, and code (TS, JS, Rust, Python, etc.).
+- Image files are scaled to fill the preview area.
+- Close the preview with `Esc` or the close (✕) button.
 
 ### File Mode Shortcuts
 
 | Shortcut | Action |
 |----------|--------|
 | `Enter` | Open file / open folder in Explorer |
-| `Ctrl+P` | Toggle file preview |
+| `Ctrl+P` | Toggle file preview (shown beside the list) |
 | `Ctrl+C` | Copy the selected file's path to clipboard |
 | `Ctrl+O` | Open the containing folder in Explorer |
 | `Ctrl+Enter` | Open file properties |
-| `Ctrl+Shift+Enter` | Open file as an administrator |
-| Right-click | Open folder / Copy path / Properties / ⭐ Add to Favorites |
+| `Ctrl+Shift+Enter` | Run as administrator |
+| Right-click | Open folder / Copy path / Properties / Run as administrator / ⭐ Add to Favorites |
 
 ### Search All Folders
 
@@ -299,7 +310,7 @@ Toggle **Search all folders** (top-left of file mode) to index every drive.
 
 ---
 
-## 9. Emoji Search
+## 8. Emoji Search
 
 ```
 /emoji           → Enter emoji mode
@@ -313,7 +324,7 @@ fire             → 🔥 related emojis
 
 ---
 
-## 10. Plugins
+## 9. Plugins
 
 Create custom commands in TOML files and run them directly from the launcher.
 
@@ -493,7 +504,7 @@ Below is the full list of commands included in the `example.toml` file that is g
 
 ---
 
-## 11. Settings
+## 10. Settings
 
 Enter via `/setting` or the ⚙️ icon in the mode bar.
 
@@ -515,7 +526,7 @@ Enter via `/setting` or the ⚙️ icon in the mode bar.
 
 ---
 
-## 12. Keyboard Shortcuts
+## 11. Keyboard Shortcuts
 
 ### Global
 
@@ -524,6 +535,7 @@ Enter via `/setting` or the ⚙️ icon in the mode bar.
 | `Ctrl+Shift+Space` | Open / close the launcher |
 | `↑` / `↓` or `Ctrl+P` / `Ctrl+N` | Navigate items |
 | `Enter` | Activate / copy to clipboard |
+| `Ctrl+Shift+Enter` | Run an app/file as administrator |
 | `Tab` | Switch to next mode |
 | `Shift+Tab` | Switch to previous mode |
 | `Esc` | Close (closes preview first if open) |
@@ -533,7 +545,8 @@ Enter via `/setting` or the ⚙️ icon in the mode bar.
 
 | Shortcut | Action |
 |----------|--------|
-| `Ctrl+P` | Toggle file preview |
+| `Ctrl+P` | Toggle file preview (shown beside the list) |
+| `Ctrl+Shift+Enter` | Run as administrator |
 | `Ctrl+C` | Copy selected file path |
 | `Ctrl+O` | Open containing folder in Explorer |
 | `Ctrl+Enter` | Open file properties |
