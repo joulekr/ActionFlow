@@ -202,6 +202,9 @@ today + 30         → 2026-07-14 (30일 후)
 - [x] 기본 모드 하이브리드 통합 검색 (v0.2.4)
 - [x] 컨텍스트 메뉴 액션 확장 (관리자 실행 / 삭제) (v0.2.4)
 - [x] 클립보드 이미지 OCR 텍스트 추출 (v0.2.4)
+- [x] 스니펫 전체 내용 미리보기 기능 (v0.2.5)
+- [x] 클립보드 타입별 필터 기능 (v0.2.5)
+
 
 ### 계획 / Planned
 
@@ -210,12 +213,11 @@ today + 30         → 2026-07-14 (30일 후)
 
 ## 라이선스 / License
 
-Copyright (c) 2026 Joule Jang
+Copyright (c) 2026 Joule Jang. All rights reserved.
 
-All rights reserved.
-
-개인적·비상업적 사용은 무료로 허용됩니다.
-재배포, 수정, 상업적 이용은 저작권자의 명시적 허가가 필요합니다.
+개인, 회사·공공기관 내부 사용은 무료입니다. 재배포, 수정, 리버스 엔지니어링,
+상업적 재판매/재배포는 저작권자의 명시적 허가가 필요합니다.
+자세한 내용은 [LICENSE.md](https://github.com/joulekr/ActionFlow/blob/main/LICENSE.md)를 참고하세요.
 
 ---
 
