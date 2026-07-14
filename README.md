@@ -4,13 +4,16 @@
 
 <h1 align="center">ActionFlow</h1>
 
-> **<p align="center">Windows용 키보드 중심 런처 & 생산성 도구</p>**
-> <p align="center">A keyboard-driven launcher and productivity tool for Windows, built with Tauri v2 + Rust + React.</p>
+ **<p align="center">Windows용 키보드 중심 런처 & 생산성 도구</p>**
+ <p align="center">A keyboard-driven launcher and productivity tool for Windows, built with Tauri v2 + Rust + React.</p>
 
 <p align="center">
   <img alt="Platform" src="https://img.shields.io/badge/platform-Windows-blue?logo=windows" />
   <a href="https://github.com/joulekr/ActionFlow/releases/latest">
     <img alt="Latest release" src="https://img.shields.io/github/v/release/joulekr/ActionFlow?style=flat-square" />
+  </a>
+  <a href="https://github.com/joulekr/ActionFlow/releases/latest">
+    <img alt="Downloads" src="https://img.shields.io/github/downloads/joulekr/ActionFlow/total?color=4c8dff" />
   </a>
   <a href="https://tauri.app">
     <img alt="Built with Tauri" src="https://img.shields.io/badge/Built%20with-Tauri%20v2-24C8DB?style=flat-square&logo=tauri" />
